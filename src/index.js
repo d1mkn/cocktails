@@ -15,7 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <PersistGate loading={null} persistor={persistor}>
         <ThemeProvider theme={theme}>
           <Global styles={GlobalStyles} />
-          <BrowserRouter basename="/frontend-create-cocktail">
+          <BrowserRouter basename="/cocktails">
             <App style={{ minHeight: '100hv' }} />
           </BrowserRouter>
         </ThemeProvider>
