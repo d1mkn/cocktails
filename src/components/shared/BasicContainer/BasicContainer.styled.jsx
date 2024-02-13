@@ -6,7 +6,6 @@ export const BasicContainer = styled.div`
   max-width: ${props => props.welcome};
   margin: 0 auto;
   position: relative;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   min-height: 100vh;

@@ -2,8 +2,18 @@ import styled from '@emotion/styled';
 
 export const HeaderContainer = styled.header`
   padding: 20px 0;
+  position: relative;
 
-  border-bottom: ${({ theme }) => theme.colors.steelBlue} solid 1px;
+  &::after {
+    content: '';
+    width: 100vw;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: ${({ theme }) => theme.colors.steelBlue};
+  }
 `;
 
 export const FlexWrapper = styled.div`

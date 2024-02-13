@@ -8,7 +8,6 @@ import mobileWebp from '../../img/main/mob.webp';
 import mobileWebp2x from '../../img/main/mob_2x.webp';
 
 export const MainSectionWrap = styled.section`
-
   max-width: 1440px;
   margin: 0 auto;
   height: 796px;
@@ -32,7 +31,7 @@ export const MainSectionSubtitle = styled.p`
   line-height: 1.25;
   max-width: 266px;
   font-size: 14px;
-  
+
   @media screen and (min-width: 768px) {
     margin-bottom: 40px;
     font-size: ${theme.fontSizes.sectionTitleTablet};
@@ -77,14 +76,10 @@ export const MainSectionTitle = styled.h1`
   }
 `;
 export const BackgroundImageWrap = styled.div`
- 
-
   background-image: url('${mobileWebp}');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right top -84px;
-
-
 
   @media (min-width: 768px) {
     background-image: url('${tabletWebp}');
@@ -93,10 +88,8 @@ export const BackgroundImageWrap = styled.div`
 
   @media (min-width: 1200px) {
     background-image: url('${desktopWebp}');
-    background-position: top -84px ;
-    
+    background-position: top -84px;
   }
-    
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     background-image: url('${mobileWebp2x}');
@@ -121,32 +114,39 @@ export const BackgroundImageWrap = styled.div`
       );
     }
   }
-
-
-
-
-
 `;
 
 export const BackgroundMainGradient = styled.div`
-  background: linear-gradient(
-      0deg,
-      rgba(10, 10, 17, 0.2) 0%,
-      rgba(10, 10, 17, 0.2) 100%
-    ),
-    linear-gradient(1deg, #0a0a11 -0.56%, rgba(10, 10, 17, 20) 21.93%),
-    linear-gradient(85deg, #060609 5.92%, rgba(10, 10, 17, 20) 51.07%);
+  position: relative;
 
-  @media (min-width: 1200px) {
+  &::before {
+    content: '';
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
     background: linear-gradient(
         0deg,
         rgba(10, 10, 17, 0.2) 0%,
-        rgba(10, 10, 17, 0.4) 100%
+        rgba(10, 10, 17, 0.2) 100%
       ),
-      linear-gradient(1deg, #0a0a11 -0.56%, rgba(10, 10, 17, 0) 21.93%),
-      linear-gradient(85deg, #060609 5.92%, rgba(10, 10, 17, 0) 51.07%);
-  }`
-;
+      linear-gradient(1deg, #0a0a11 -0.56%, rgba(10, 10, 17, 20) 21.93%),
+      linear-gradient(85deg, #060609 5.92%, rgba(10, 10, 17, 20) 51.07%);
+
+    @media (min-width: 1200px) {
+      background: linear-gradient(
+          0deg,
+          rgba(10, 10, 17, 0.2) 0%,
+          rgba(10, 10, 17, 0.4) 100%
+        ),
+        linear-gradient(1deg, #0a0a11 -0.56%, rgba(10, 10, 17, 0) 21.93%),
+        linear-gradient(85deg, #060609 5.92%, rgba(10, 10, 17, 0) 51.07%);
+    }
+  }
+`;
 
 export const ButtonContainer = styled.div`
   margin: 0 auto;

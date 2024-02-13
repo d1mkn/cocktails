@@ -20,6 +20,10 @@ export const GlobalStyles = css`
     box-sizing: inherit;
   }
 
+  #root {
+    overflow: hidden;
+  }
+
   body {
     margin: 0;
     font-family: 'Manrope', sans-serif;
@@ -71,13 +75,12 @@ export const GlobalStyles = css`
 
   body {
     &::-webkit-scrollbar {
-      width: 16px;
+      width: 4px;
     }
 
     &::-webkit-scrollbar-thumb {
       border-radius: 8px;
       background-color: ${theme.colors.lightGrayTransparent};
-      border: 6px solid ${theme.colors.black};
     }
 
     &::-webkit-scrollbar-thumb:hover {
