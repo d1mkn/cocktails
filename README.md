@@ -41,7 +41,7 @@ Our web app provides a wide range of cocktail recipes, from classics like the Ma
 
 ## Getting Started
 
-Use this link to open the app: https://disrachik.github.io/frontend-create-cocktail/
+Use this link to open the app: https://d1mkn.github.io/cocktails/
 
 Link API: https://drink-master-db.onrender.com
 
